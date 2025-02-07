@@ -1,15 +1,13 @@
-// Debounce
+// JavaScript
 const debounce = (fn, ms) => {
   let timer = null;
 
-  const callback = (...args) => {
+  return (...args) => {
     clearTimeout(timer);
     timer = setTimeout(() => {
       fn(...args);
     }, ms);
   };
-
-  return callback;
 };
 
 const saveInput = (val) => console.log(val); // 555
@@ -20,12 +18,33 @@ process("333");
 process("444");
 process("555");
 
-// useEffect approach (it's a bit different)
+// React
 
-useEffect(() => {
-  const timer = setTimeout(() => {
-    //some setAction
-  }, 1000);
+import { useEffect, useState } from "react";
 
-  return () => clearTimeout(timer); // Cleanup function to clear previous timer on re-render
-}, [input]);
+const useDebounce = (str: string, ms: number) => {
+  // custom hook (called every time App() is re-rendered)
+  const [debouncedQuery, setDebouncedQuery] = useState("");
+
+  useEffect(() => {
+    const timer = setTimeout(() => setDebouncedQuery(str), ms);
+    return () => clearTimeout(timer);
+  }, [str]);
+
+  return debouncedQuery;
+};
+
+const App = () => {
+  const [query, setQuery] = useState("");
+  const debouncedQuery = useDebounce(query, 1000);
+
+  return (
+    <div>
+      <input type="text" placeholder="Search..." value={query} onChange={(e) => setQuery(e.target.value)} />
+      <div>Normal: {query}</div>
+      <div>Debounced: {debouncedQuery}</div>
+    </div>
+  );
+};
+
+export default App;
