@@ -19,24 +19,18 @@ process("444");
 process("555");
 
 // React
-
 import { useEffect, useState } from "react";
-
-const useDebounce = (str: string, ms: number) => {
-  // custom hook (called every time App() is re-rendered)
-  const [debouncedQuery, setDebouncedQuery] = useState("");
-
-  useEffect(() => {
-    const timer = setTimeout(() => setDebouncedQuery(str), ms);
-    return () => clearTimeout(timer);
-  }, [str]);
-
-  return debouncedQuery;
-};
 
 const App = () => {
   const [query, setQuery] = useState("");
-  const debouncedQuery = useDebounce(query, 1000);
+  const [debouncedQuery, setDebouncedQuery] = useState("");
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDebouncedQuery(query);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, [query]);
 
   return (
     <div>
