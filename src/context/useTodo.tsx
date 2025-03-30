@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useContext, useState } from "react";
+import { createContext, ReactNode, useContext, useState, useReducer } from "react";
 
 export interface Todo {
   id: number;
@@ -7,29 +7,35 @@ export interface Todo {
 
 interface TodoContextType {
   todos: Todo[];
-  addTodo: (content: string) => void;
-  removeTodo: (id: number) => void;
+  dispatch: React.ActionDispatch<any>;
 }
+
+type ReducerActions = { type: "ADD"; payload: { content: string } } | { type: "REMOVE"; payload: { id: number } };
+
+const reducer = (state: Todo[], action: ReducerActions): Todo[] => {
+  switch (action.type) {
+    case "ADD":
+      const newTodo = {
+        id: Date.now(),
+        content: action.payload.content,
+      };
+      return [...state, newTodo];
+    case "REMOVE":
+      const id = action.payload.id;
+      const updatedTodos = state.filter((todo: Todo) => todo.id !== id);
+      return updatedTodos;
+    // important to keep default
+    default:
+      return state;
+  }
+};
 
 export const TodoContext = createContext<TodoContextType | undefined>(undefined);
 
 const TodoProvider = ({ children }: { children: ReactNode }) => {
-  const [todos, setTodos] = useState<Todo[]>([]);
+  const [todos, dispatch] = useReducer(reducer, []);
 
-  const addTodo = (content: string) => {
-    const newTodo = {
-      id: Date.now(),
-      content,
-    };
-    setTodos((prev) => [...prev, newTodo]);
-  };
-
-  const removeTodo = (id: number) => {
-    const updatedTodos = todos.filter((todo) => todo.id !== id);
-    setTodos(updatedTodos);
-  };
-
-  return <TodoContext.Provider value={{ todos, addTodo, removeTodo }}>{children}</TodoContext.Provider>;
+  return <TodoContext.Provider value={{ todos, dispatch }}>{children}</TodoContext.Provider>;
 };
 
 const useTodo = () => useContext(TodoContext);
