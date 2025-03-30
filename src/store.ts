@@ -5,15 +5,18 @@ interface Store {
   todos: Todo[];
   add: (content: string) => void;
   remove: (id: number) => void;
-  setTodos: (fetchedTodos: Todo[]) => void;
+  setTodos: (fetchedTodos: Todo[]) => void; // using useEffect or React Query. This is a wrong approach, and it causes duplication
+  fetchTodos: () => Promise<void>;
 }
 
-export const useStore = create<Store>((set) => ({
+export const useTodoStore = create<Store>((set) => ({
   todos: [],
-  setTodos: (fetchedTodos: Todo[]) =>
-    set(() => ({
-      todos: fetchedTodos, // overwrite it altogether
-    })),
+  setTodos: (todos: Todo[]) => set({ todos }),
+  fetchTodos: async () => {
+    const response = await fetch("https://67e97f30bdcaa2b7f5b98c85.mockapi.io/todo");
+    const data = await response.json();
+    set(() => ({ todos: data }));
+  },
   add: (content: string) =>
     set((state) => ({
       todos: [...state.todos, { id: Date.now(), content }],
