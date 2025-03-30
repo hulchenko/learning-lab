@@ -1,57 +1,69 @@
-import { FormEvent, useEffect, useState } from "react";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { useState } from "react";
 import "./App.css";
-// import { useTodo } from "./context/TodoContext.tsx";
-import { Todo } from "./context/TodoContext.tsx";
-import { useStore } from "./store.ts";
-import { useFetch } from "./hooks/useFetch.ts";
+import { Todo } from "./context/TodoContext";
+import { addTodo, getTodos, removeTodo } from "./lib/queries";
+
+const FETCH_URL = "https://67e97f30bdcaa2b7f5b98c85.mockapi.io/todo";
 
 function App() {
-  // const { todos, dispatch } = useTodo();
-  const [task, setTask] = useState<string | "">("");
-  const { data, error, loading } = useFetch("https://67e97f30bdcaa2b7f5b98c85.mockapi.io/todo");
+  const queryClient = useQueryClient();
+  const [task, setTask] = useState("");
+  const [error, setError] = useState("");
 
-  // zustand store actions
-  const setTodos = useStore((state) => state.setTodos);
-  const todos = useStore((state) => state.todos);
-  const addTodo = useStore((state) => state.add);
-  const removeTodo = useStore((state) => state.remove);
+  const {
+    data: todos,
+    isLoading,
+    error: todosError,
+  } = useQuery({
+    queryKey: ["todos", FETCH_URL],
+    queryFn: () => getTodos(FETCH_URL),
+    retry: false,
+  });
 
-  const submitHandler = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const content = (e.target as HTMLFormElement).content.value;
-    addTodo(content);
-    // dispatch({ type: "ADD", payload: { content } });
+  const { mutateAsync: addTodoMutation } = useMutation({
+    mutationFn: addTodo,
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["todos"] });
+    },
+    onError: () => setError("Failed adding todo."),
+  });
+
+  const { mutateAsync: removeTodoMutation } = useMutation({
+    mutationFn: removeTodo,
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["todos"] });
+    },
+    onError: () => setError("Failed removing todo."),
+  });
+
+  const addTodoHandler = async () => {
+    await addTodoMutation({ content: task, url: FETCH_URL });
     setTask("");
   };
 
-  useEffect(() => {
-    if (data && data.length > 0) {
-      setTodos(data);
-    }
-  }, [data]);
+  const removeTodoHandler = async (id: number) => {
+    await removeTodoMutation({ id, url: FETCH_URL });
+  };
 
-  if (loading) return <div>Loading...</div>;
-  // if (error) return <div>{error}</div>;
+  if (isLoading) return <div>Loading...</div>;
+  if (todosError) return <div>{todosError.message}</div>;
+  if (error) return <div>{error}</div>;
 
   return (
     <>
-      <form onSubmit={submitHandler}>
-        <input value={task} onChange={(e) => setTask(e.target.value)} type="text" name="content" placeholder="add new todo.." />
-        <button type="submit">Add</button>
-      </form>
-      {error
-        ? error
-        : todos.map((todo: Todo) => (
-            <div key={todo.id}>
-              <p>{todo.content}</p>
-              <button
-                // onClick={() => dispatch({ type: "REMOVE", payload: { id: todo.id } })}
-                onClick={() => removeTodo(todo.id)}
-              >
-                Delete
-              </button>
-            </div>
-          ))}
+      <div>
+        <input value={task} onChange={(e) => setTask(e.target.value)} type="text" name="content" placeholder="Add new todo.." />
+        <button type="submit" onClick={addTodoHandler}>
+          Add
+        </button>
+      </div>
+      {todos?.map((todo: Todo) => (
+        <div key={todo.id}>
+          <p>{todo.content}</p>
+          <button onClick={() => removeTodoHandler(todo.id)}>Delete</button>
+        </div>
+      ))}
     </>
   );
 }
