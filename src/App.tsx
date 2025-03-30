@@ -1,7 +1,7 @@
 import { FormEvent, useState } from "react";
 import "./App.css";
-import { useTodo } from "./context/useTodo.tsx";
-import { Todo } from "./context/useTodo.tsx";
+import { useTodo } from "./context/TodoContext.tsx";
+import { Todo } from "./context/TodoContext.tsx";
 
 function App() {
   const { todos, dispatch } = useTodo();
