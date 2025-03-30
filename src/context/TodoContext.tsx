@@ -38,6 +38,6 @@ const TodoProvider = ({ children }: { children: ReactNode }) => {
   return <TodoContext.Provider value={{ todos, dispatch }}>{children}</TodoContext.Provider>;
 };
 
-const useTodo = () => useContext(TodoContext);
+const useTodoContext = () => useContext(TodoContext);
 
-export { useTodo, TodoProvider };
+export { useTodoContext, TodoProvider };
