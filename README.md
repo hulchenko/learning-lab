@@ -1,9 +1,54 @@
-# Cosmo Demo
+# Studio (tables in cloud) commands
 
-This demo consists of 2 subgraphs
+1. First, log in into WunderGraph Cosmo
 
-- posts
-- users
+```
+wgc auth login
+```
+
+2. Create an environment(namespace)
+
+```
+wgc namespace create <env-name>
+```
+
+3. Create federated graph, encapsulating subgraphs
+
+```bash
+wgc federated-graph create <federated-graph-name> \
+    --namespace <env-name> \
+    --routing-url <url-of-deployed-router>
+```
+
+4. Create remote subgraph ankor, insert into namespace(env)
+
+```bash
+wgc subgraph create <subgraph-name> \
+    --namespace <env-name> \
+    --routing-url <url-of-deployed-router>
+```
+
+5. Point local graphql schema to remote and push the update
+
+```bash
+wgc subgraph publish <subgraph-name> \
+    --namespace <env-name> \
+    --routing-url <url-of-deployed-router>
+```
+
+6. Generate router token to talk with control plane
+
+```bash
+wgc router token create <token-name> \
+    --graph-name <federated-graph-name> \
+    --namespace <env-name>
+```
+
+7. Delete environment/namespace
+
+```bash
+wgc namespace delete -f <env-name>
+```
 
 ## Running Subgraphs Locally
 
@@ -31,7 +76,7 @@ cd router
 wgc router compose --input graph.localhost.yaml --out config.json
 ```
 
-3. Finally run the router and head over to http://localhost:3002/graphql
+3. Finally run the router and head over to http://localhost:3002
 
 ```bash
 docker run \
@@ -48,6 +93,25 @@ docker run \
   ghcr.io/wundergraph/cosmo/router:latest
 ```
 
-## CI/CD
+```bash
+docker run \
+  --name cosmo-router \
+  --rm \
+  -p 3002:3002 \
+  --add-host=host.docker.internal:host-gateway \
+  --pull always \
+  -e DEV_MODE=true \
+  -e LISTEN_ADDR=0.0.0.0:3002 \
+  -e GRAPH_API_TOKEN=<generated-router-token> \
+  ghcr.io/wundergraph/cosmo/router:latest
+```
 
-GitHub actions are setup to do schema checks on pull requests and schema publish on push to main.
+4. To kill the process, run the following command.
+
+```
+pkill -f "npm run dev"
+```
+
+## WunderGraph Workflow
+
+Client -> CLI -> Control Plane -> Router
