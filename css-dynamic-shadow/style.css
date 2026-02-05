@@ -1,0 +1,23 @@
+html {
+    color: black;
+    font-family: sans-serif;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  }
+
+body {
+margin: 0;
+}
+
+.main {
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+}
+
+h1 {
+text-shadow: 10px 10px 3px #94bbe9;
+font-size: 100px;
+}
