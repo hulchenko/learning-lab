@@ -1,0 +1,51 @@
+h1 {
+color: #7FDBFF;
+font-family: 'Bungee', cursive;
+font-size: 100px;
+text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+p {
+  font-family: 'Bungee', cursive;
+  color: #7FDBFF;
+  font-size: 150%;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+body {
+  background-image: url(https://wallpapercave.com/wp/wp2808576.jpg);
+  background-position: left;
+}
+
+form::after {
+  content: "";
+  background: url(https://c4.wallpaperflare.com/wallpaper/780/920/962/pastel-icecream-gradation-blur-wallpaper-preview.jpg);
+  background-size: 40% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+  top: 300px;
+  left: 0;
+  bottom: -550px;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#radio {
+    display: table;
+    margin-right: 130px;
+}
+
+#checkbox {
+  display: table;
+}
+
+
+#submit {
+  width: 10%;
+  font-size: 130%;
+  background-color: #7FDBFF;
+  font-family: 'Bungee', cursive;
+  color: black;
+}
