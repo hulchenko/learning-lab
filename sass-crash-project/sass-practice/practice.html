@@ -1,0 +1,110 @@
+<!-- For Loop: -->
+
+<style type="text/scss">
+  @for $j from 1 through 6 {
+    .text-#{$j} {
+      font-size: 15px * $j;
+    }
+  }
+</style>
+
+<p class="text-1">Hello</p>
+<p class="text-2">Hello</p>
+<p class="text-3">Hello</p>
+<p class="text-4">Hello</p>
+<p class="text-5">Hello</p>
+
+<!-- OR -->
+
+<style type="text/scss">
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      width: 100%/12 * $i;
+    }
+  }
+
+  .col-1 {
+    width: 8.33333%;
+  }
+  .col-2 {
+    width: 16.66667%;
+  }
+  /*...*/
+  .col-12 {
+    width: 100%;
+  }
+</style>
+
+<!-- For Each: -->
+<style>
+  @each $color in blue, red, green {
+    .#{$color}-text {
+      color: $color;
+    }
+  }
+</style>
+
+<!-- OR -->
+
+<style type="text/scss">
+  @each $color in blue, black, red {
+    .#{$color}-bg {
+      background-color: $color;
+    }
+  }
+
+  div {
+    height: 200px;
+    width: 200px;
+  }
+</style>
+
+<div class="blue-bg"></div>
+<div class="black-bg"></div>
+<div class="red-bg"></div>
+
+<!-- For Map: -->
+<style>
+  $colors: (
+    color1: blue,
+    color2: red,
+    color3: green,
+  );
+
+  @each $key, $color in $colors {
+    .#{$color}-text {
+      color: $color;
+    }
+  }
+</style>
+<!-- Extends: -->
+<style>
+  .panel {
+    background-color: red;
+    height: 70px;
+    border: 2px solid green;
+  }
+  /*extends ex:*/
+  .big-panel {
+    @extend .panel;
+    width: 150px;
+    font-size: 2em;
+  }
+</style>
+<!-- While Loop: -->
+<style type="text/scss">
+  $x: 1;
+  @while $x < 11 {
+    .text-#{$x} {
+      font-size: 15px * $x;
+    }
+    $x: $x + 1;
+  }
+</style>
+<body>
+  <p class="text-1">Hello</p>
+  <p class="text-2">Hello</p>
+  <p class="text-3">Hello</p>
+  <p class="text-4">Hello</p>
+  <p class="text-5">Hello</p>
+</body>

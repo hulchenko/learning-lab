@@ -1,0 +1,25 @@
+//to apply styles to multiple same elements use %, in our case we use btn-... class for a links
+//% is a shared element styling, later applied to each of the elements, as a reference link with @extend command
+
+%btn {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin: 3px;
+
+    &:hover {
+        transform: scale(.98);
+    }
+}
+
+.btn-primary {
+    @extend %btn;
+    //background-color: darken($primary-color, 5%); // lighten or darken functions are used to change colors' brightness
+    @include set-background(lighten($primary-color,10%));
+}
+
+.btn-secondary {
+    @extend %btn;
+    //background-color: $secondary-color;
+    @include set-background($secondary-color);
+}

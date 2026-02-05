@@ -1,0 +1,30 @@
+// Setup for NPM module:
+// #1 sudo npm install -g sass
+// #2 sass --watch scss/style.scss css/style.css
+/////////////OR
+//Live Sass Compiler VS Code extension
+
+
+//repeatedly used variables:
+$light-color: #f4f4f4;
+$primary-color: #0e6cff;
+//$primary-color: #e0ffff;
+$secondary-color: #ff8700;
+$font-stack: Arial, Helvetica, sans-serif;
+
+//Create functions, setting font-color based on background-color:
+
+@function set-text-color($color) {
+    @if(lightness($color) > 70){
+        @return #333;
+    }@else{
+        @return #fff;
+    }
+}
+
+//Substituting background and color parameters:
+@mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color);
+}
+
