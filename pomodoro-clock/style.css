@@ -1,0 +1,53 @@
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
+.time-sets {
+  display: grid;
+  grid-template-columns: 50px 200px 50px; /* 1st fr = 50px; 2nd fr = 200px; 3rd fr = 50px */
+  justify-items: center;
+  align-items: center;
+}
+
+.dual-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 700px;
+  margin: auto;
+  justify-items: center;
+  align-items: center;
+}
+
+body {
+  color: white;
+  background-color: #1e2952;
+}
+
+.btn-large {
+  margin: 5px;
+}
+
+button:hover {
+  transform: scale(1.01);
+  filter: brightness(95%);
+}
+
+button:active {
+  filter: brightness(105%);
+}
+
+h1,
+h3 {
+  text-shadow: 1px 1px 2px #ccc;
+}
+
+.title {
+  display: flex;
+  margin-left: 10%;
+  width: 100%;
+  font-size: 20px;
+}
