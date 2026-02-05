@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+
+html {
+    box-sizing: border-box;
+    display: flex;
+    background: linear-gradient(90deg, #C6FFDD, #FBD786, #f7797d);
+    overflow: hidden;
+    justify-content: center;
+    max-height: 100vh;
+    font-family: 'Shadows Into Light Two', cursive;
+}
+
+
+.hl {
+    background: #ffc600;
+  }
+
+input {
+    width: 100%;
+    padding: 20px;
+    border: 10px solid transparent;
+}
+
+.search-form {
+    max-width: 300px;
+    min-width: 300px;
+    margin: 80px auto;
+  }
+
+input.search {
+    margin: 0;
+    position: relative;
+    outline: none;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 3px 3px 3px rgb(68, 68, 68);
+}
+
+.suggestions {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+  }
+  
+  .suggestions li {
+    display: flex;
+    background: transparent;
+    list-style: none;
+    padding: 5px;
+    color: white;
+    text-shadow: 1px 2px 2px black;
+    font-size: 20px;
+    justify-content: space-between;
+    text-transform: capitalize;
+  }
+
+  span.population {
+    font-size: 20px;
+  }
