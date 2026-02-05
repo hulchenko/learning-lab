@@ -1,0 +1,15 @@
+/* ng-invalid and ng-touched are angular css classes:
+    1. ng-invalid is assigned when the required field is empty
+    2. ng-touched is assigned when ng-untouched field is being clicked on 
+*/
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
+
+select.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
+
+.help-block {
+    color: red;
+}

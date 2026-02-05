@@ -1,0 +1,18 @@
+<form (ngSubmit)="onFormSubmit(testFormControl)" #testFormControl="ngForm">
+  <div class="form-group">
+    <label for="name">Character Name</label>
+    <input type="text" id="name" name="name" class="form-control" ngModel required #testNameControl="ngModel">
+    <span class="help-block" *ngIf="testNameControl.invalid && testNameControl.touched">Please enter character's
+      name</span>
+  </div>
+  <div class="form-group">
+    <label for="side">Choose Side</label>
+    <select name="side" id="side" class="form-control" ngModel required #testSideControl="ngModel">
+      <option *ngFor="let i of availableSides" [value]="i.value">
+        {{i.display}}</option>
+    </select>
+    <span class="help-block" *ngIf="testSideControl.invalid && testSideControl.touched">Please choose character's
+      side</span>
+  </div>
+  <button class="btn btn-primary" type="submit" [disabled]="testFormControl.invalid">Add Character</button>
+</form>

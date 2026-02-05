@@ -1,0 +1,18 @@
+<div>
+  <nav class="nav nav-tabs">
+    <li role="presentation" routerLinkActive="active">
+      <!-- <a (click)="onChoose('all')" style="cursor: pointer">All</a> -->
+      <a routerLink="/characters/all">All</a>
+    </li>
+    <li role="presentation" routerLinkActive="active">
+      <!-- <a (click)="onChoose('light')" style="cursor: pointer">Light</a> -->
+      <a routerLink="/characters/light">Light</a>
+    </li>
+    <li role="presentation" routerLinkActive="active">
+      <!-- <a (click)="onChoose('dark')" style="cursor: pointer">Dark</a> -->
+      <a routerLink="/characters/dark">Dark</a>
+    </li>
+  </nav>
+  <!-- <app-list [characters]="getCharacters()"></app-list> -->
+  <router-outlet></router-outlet>
+</div>
