@@ -1,0 +1,14 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+path.county:hover {
+  fill: red;
+}
