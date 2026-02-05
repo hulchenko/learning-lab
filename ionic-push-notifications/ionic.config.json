@@ -1,0 +1,7 @@
+{
+  "name": "test-ionic-push-notifications",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
