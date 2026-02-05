@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
+.title {
+    text-align: center;
+    width: 500px;
+    margin: 30px auto;
+    text-shadow: 2px 2px 3px pink;
+    font-size: 50px;
+    font-style: bold;
+}
+
+.title:hover {
+    cursor: default;
+}
+
+body {   
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Hachi Maru Pop', cursive;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/background.png);
+}
+
+
+.score-board {
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    border: 2px black solid;
+    border-radius: 50px;
+    background-color: white;
+    cursor: default;
+}
+
+.score-board:hover {
+    box-shadow: 2px 5px 15px white;
+    cursor: pointer;
+}
+
+#score-heading {
+    box-sizing: border-box;
+    text-shadow: 2px 2px 3px pink;
+    text-align: center;
+}
+
+.score {
+    box-sizing: border-box;
+    margin: 30px;
+}
+
+.container {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.result {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px black;
+    width: auto;
+    max-width: 500px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+
+.choice {
+    display: inline-block;
+    border: 5px solid white;
+    background: rgb(226, 225, 225);
+    border-radius: 50%;
+    padding: 15px;
+    margin: 0 25px;
+    transition: 0.5s ease-in-out;
+}
+
+.choice-win {
+    border: 5px solid rgb(43, 255, 0);
+}
+
+.choice-lose {
+    border: 5px solid rgb(255, 0, 0);
+}
+
+.choice-draw {
+    border: 5px solid rgb(134, 133, 133);
+}
+
+.choice:hover {
+    box-shadow: 5px 10px 15px grey;
+    background: white;
+    cursor: pointer;
+}
+
+.choice:active {
+background: rgb(252, 235, 238);
+}
+
+footer {
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 3px pink;
+    font-size: 30px;
+}
