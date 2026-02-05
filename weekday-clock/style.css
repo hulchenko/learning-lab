@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+* {
+  font-family: 'Electrolize', sans-serif;
+  user-select: none;
+  overflow: hidden;
+}
+
+body {
+  background-color: #111;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.week {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.week p {
+  margin: 10px;
+  font-size: 30px;
+  color: rgb(1, 63, 1);
+  text-shadow: 1px 1px 30px rgb(1, 63, 1);
+}
+
+.clock {
+  display: flex;
+  font-size: 120px;
+  font-weight: bold;
+  width: 100%;
+  padding-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.day {
+  color: rgb(15, 241, 15) !important;
+  text-shadow: 2px 2px 15px rgb(15, 241, 15) !important;
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(15, 241, 15);
+  text-shadow: 2px 2px 15px rgb(15, 241, 15);
+}
+
+.buttons {
+  padding-top: 40px;
+  display: flex;
+}
+
+.twelve,
+.twenty-four {
+  display: flex;
+  border-radius: 5px;
+  border-color: rgb(15, 241, 15);
+  margin: 0 40px;
+  padding: 25px;
+  height: 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  color: rgb(15, 241, 15);
+  font-weight: bold;
+  text-shadow: 1px 1px 10px rgb(15, 241, 15);
+  cursor: pointer;
+  outline: none;
+}
+
+.twelve:hover,
+.twenty-four:hover {
+  background-color: rgb(15, 241, 15);
+  color: #111;
+  border-color: #111;
+  text-shadow: 1px 1px 10px #111;
+}
+
+.twelve:active,
+.twenty-four:active {
+  transform: scale(0.99);
+}
+
+.switch {
+  background-color: rgb(15, 241, 15);
+  color: #111;
+  border-color: #111;
+  text-shadow: 1px 1px 10px #111;
+}
+
+.dots {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    overflow: hidden;
+  }
+
+  .week {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30px 30px 30px;
+    width: 400px;
+  }
+
+  .week p {
+    font-size: 15px;
+  }
+
+  #saturday {
+    grid-column: 1/4;
+  }
+
+  .clock {
+    font-size: 50px;
+  }
+}
