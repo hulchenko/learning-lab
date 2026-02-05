@@ -1,0 +1,41 @@
+
+
+#image {
+    display: block;
+    max-width: 100%;
+    height: 70%;
+    margin: auto;
+    filter: grayscale(100%);
+}
+
+
+#title {
+font-size: 100px;
+font-family: 'Russo One', sans-serif;
+color: grey;
+}
+
+#img-caption {
+  font-size: 30px;
+  color: grey;
+}
+
+h2 {
+  font-style: italic;
+  font-size: 150%;
+  margin-top: -60px;
+  color: red;
+}
+
+h3 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 150%;
+}
+
+ul {
+  font-size: 175%;
+ font-family: monospace;
+ text-align: justify;
+ max-width: 700px;
+
+}
