@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery Crash Course</title>
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $('<div />')
+        .css({
+          margin: '20px auto',
+          width: '100px',
+          height: '100px',
+          borderRadius: '50%',
+          backgroundColor: 'red',
+          transition: '0.3s transform ease-in',
+        })
+        .hover(
+          function () {
+            $(this).css('transform', 'scale(1.1)');
+          },
+          function () {
+            $(this).css('transform', 'scale(1)');
+          }
+        )
+        .click(function () {
+          const $clone = $(this).clone(); //objects created within jquery usually start with $ sign, to indicate it was created withing jquery for code readability.
+
+          $clone.css({
+            position: 'relative',
+            top: '2px',
+            backgroundColor: 'blue',
+          });
+
+          $clone.click(() => $clone.fadeOut());
+          $(document.body).append($clone);
+        })
+        .appendTo($(document.body));
+    </script>
+  </body>
+</html>
