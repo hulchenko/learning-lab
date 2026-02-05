@@ -1,0 +1,1 @@
+This is the 7th JS project out of 30 JS Challenge.
