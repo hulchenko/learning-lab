@@ -1,0 +1,19 @@
+body {
+  text-align: center;
+  padding-top: 5rem;
+}
+
+p {
+  font-size: 2rem !important;
+  padding: 2rem 0;
+}
+
+.slide-up {
+  animation: fadeInUp;
+  animation-duration: 2.5s;
+}
+
+.fade-in {
+  animation: fadeIn;
+  animation-duration: 1.5s;
+}
