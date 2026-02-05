@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100vh;
+  background: linear-gradient(to right, rgb(189, 195, 199), rgb(44, 62, 80));
+  background-position: center;
+  background-size: cover;
+  overflow-y: hidden;
+}
+
+.calculator {
+  background-color: silver;
+  margin: 20rem auto;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px black;
+  user-select: none;
+}
+
+.screen {
+  min-height: 70px;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: right;
+  font-size: 30px;
+  /*limit amount of characters on the screen */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  user-select: text;
+  outline: 1px solid black;
+  outline-offset: -3px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.btn-grid-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.top {
+  border-radius: 5px;
+}
+
+#clear {
+  width: 75%;
+  background-color: rgb(175, 81, 81) !important;
+}
+
+#backspace {
+  width: 82.5px;
+  background-color: rgb(216, 203, 81) !important;
+}
+
+.btn {
+  padding: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0px 0px 3px black;
+  background-color: #999;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.operator {
+  background-color: rgb(81, 200, 216) !important;
+}
+
+#equals {
+  background-color: rgb(216, 203, 81) !important;
+}
+
+.btn:hover {
+  filter: brightness(90%);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+footer {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: "Bowlby One SC", cursive;
+  text-shadow: 0px 0px 3px black;
+}
+
+footer a {
+  color: #fff;
+}
+
+a:visited,
+a:hover {
+  text-decoration: none;
+}
