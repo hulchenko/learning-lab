@@ -1,0 +1,200 @@
+
+#header {
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header-img {
+  width: 180px;
+  height: 120px;
+  padding-left: 30px;
+}
+
+a:link, a:active, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+color: grey;
+}
+
+#biotext {
+  margin-top: -70px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+
+}
+
+#nav-bar {
+  width: 50%;
+   height: 60px;
+   margin-right: 20px;
+}
+
+#nav-bar ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 40px;
+  margin-top: 10px;
+  height: 60px;
+}
+
+#bio {
+  padding-top: 200px;
+}
+
+#vid {
+  padding-top: 200px;
+  }
+
+#pupvid {
+  text-align: center;
+}
+
+#gallery {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.frenchie {
+  width: 47%;
+  padding: 3px;
+}
+
+h1 {
+  padding-top: 200px;
+  color: black;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 90px;
+}
+
+h2 {
+color: black;
+font-family: 'Luckiest Guy', cursive;
+font-size: 60px;
+text-align: center;
+margin-top: 100px;
+}
+
+p {
+  margin-top: -40px;
+  text-align: center;
+  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Special Elite', cursive;
+}
+
+#contacts {
+  padding-top: 100px;
+}
+
+.button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 40px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  border: none;
+}
+
+.button:hover {
+  border-style: solid;
+  border-radius: 30px;
+}
+#arrowtop {
+  font-size: 100px;
+  font-style: normal;
+}
+
+@media screen and (max-width: 1200px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+
+#nav-bar ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+  }
+
+#nav-bar li {
+  padding: 10px;
+}
+#header-img {
+    display: none;
+  }
+
+#video {
+  width: 1000;
+  height: 100%;
+}
+}
+
+@media screen and (max-width: 900px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+  }
+
+#nav-bar ul {
+    align-items: center;
+    font-size: 20px;
+  }
+
+#nav-bar li {
+  padding: 10px;
+}
+
+#header-img {
+    display: none;
+  }
+
+#video {
+  width: 700px;
+  height: 70%;
+}
+}
+
+@media screen and (max-width: 620px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+#nav-bar ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    font-size: 20px;
+  }
+
+#nav-bar li {
+  padding: 10px;
+}
+#header-img {
+    display: none;
+  }
+
+#video {
+  width: 300px;
+  height: 50%;
+}
+}
