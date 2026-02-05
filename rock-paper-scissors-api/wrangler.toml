@@ -1,0 +1,6 @@
+name = "rock-paper-scissors-api"
+main = "src/index.js"
+type = "javascript"
+compatibility_date = "2023-01-16"
+account_id = "97a2816118a344af3921cdac62a9bad7"
+workers_dev = true
