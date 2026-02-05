@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+h3 {
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    user-select: none;
+}
+
+small {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.times {
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    font-size: 23px;
+    font-weight: bold;
+    user-select: none;
+    cursor: default;
+    border-radius: 50%;
+    padding: 10px 10px;
+}
+
+.fa-heart {
+    color: red;
+    top: 50%;
+}
+
+.fa-gratipay {
+    position: absolute;
+    font-size: 23px;
+    user-select: none;
+    color: rgb(8, 5, 5);
+    top: 103%;
+    left: 43%;
+    cursor: default;
+}
+
+.cats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cat {
+    height: 400px;
+    width: 300px;
+    margin: 25px;
+    cursor: pointer;
+    max-width: 100%;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.cat .fa-heart {
+    position: absolute;
+    animation: grow 1s linear;
+}
+
+@keyframes grow {
+    to {
+        transform: translate(-50%, -50%) scale(20);
+        opacity: 0;
+    }
+}
