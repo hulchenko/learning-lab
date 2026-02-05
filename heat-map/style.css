@@ -1,0 +1,7 @@
+rect:hover {
+  fill: red;
+}
+
+#legend {
+  pointer-events: none;
+}
