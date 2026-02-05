@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-basics",
+  "version": "1.0.0",
+  "description": "Crash course Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "node",
+    "js"
+  ],
+  "author": "Vadym Hulchenko",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "//": [
+    "script start - regular node command",
+    "script dev - nodemon utility runs server constantly, without need to manually stop and restart on every change"
+  ]
+}
