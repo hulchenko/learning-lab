@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Theme</title>
+    <link rel="stylesheet" href="background-theme.css">
+</head>
+<body class="output">
+    <label for="select">Select Theme</label>
+    <select>
+        <option value="white">White</option>
+        <option value="black">Black</option>
+        <option value="purple">Purple</option>
+        <option value="yellow">Yellow</option>
+    </select>
+</body>
+<script>
+    const select = document.querySelector('select');
+const html = document.querySelector('.output');
+
+select.onchange = function() {
+  const choice = select.value;
+
+switch(choice) {
+case "white":
+update("white","black");
+break;
+case "black":
+update("black","white");
+break;
+case "purple":
+update("purple","white");
+break;
+case "yellow":
+update("yellow","black");
+break;
+}
+}
+function update(bgColor, textColor) {
+  html.style.backgroundColor = bgColor;
+  html.style.color = textColor;
+}
+</script>
+</html>
