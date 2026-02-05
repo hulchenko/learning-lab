@@ -1,0 +1,61 @@
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.active {
+    left: 0;
+  }
+
+  & ul {
+    position: relative;
+  }
+  & ul li {
+    list-style: none;
+    position: relative;
+    text-align: center;
+  }
+
+  & ul li a {
+    font-size: 2.2rem;
+    color: #111;
+    text-decoration: none;
+    font-weight: 300;
+  }
+
+  & ul li a:hover {
+    color: $primary-color;
+  }
+
+  & .social-bar {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  & .social-bar a {
+    display: inline-block;
+    transform: scale(0.5);
+  }
+
+  & .social-bar a:hover {
+    transform: scale(0.6);
+  }
+
+  & .email-icon {
+    position: absolute;
+    bottom: 20px;
+    transform: scale(0.5);
+  }
+}

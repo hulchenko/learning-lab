@@ -1,0 +1,91 @@
+.contact {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &-info {
+    width: 350px;
+    padding: 60px 40px 20px;
+  }
+
+  &-info .info-box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+
+  &-info .info-box &-icon {
+    width: 20px;
+    margin-right: 25px;
+  }
+
+  &-info .info-box .details h4 {
+    color: $secondary-color;
+  }
+
+  &-info .info-box .details p,
+  &-info .info-box .details a {
+    color: #111;
+  }
+
+  &-form {
+    position: relative;
+    width: calc(100% - 400px);
+    padding: 60px 40px 20px;
+  }
+
+  &-form form {
+    width: 100%;
+  }
+
+  &-form .row {
+    width: 100%;
+    display: flex;
+  }
+
+  &-form .input50 {
+    width: 50%;
+    margin: 0 10px;
+  }
+  &-form .input100 {
+    width: 100%;
+    margin: 0 10px;
+  }
+
+  &-form .row input,
+  &-form .row textarea {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #111;
+    background-color: transparent;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 10px 0;
+    resize: none; /* for text area */
+  }
+
+  &-form .row textarea {
+    height: 150px;
+  }
+
+  &-form .row input[type='submit'] {
+    background-color: $primary-color;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 20px 0;
+    max-width: 250px;
+    cursor: pointer;
+    border: 0;
+  }
+
+  &-form .row input[type='submit']:hover {
+    transform: scale(0.98);
+  }
+}

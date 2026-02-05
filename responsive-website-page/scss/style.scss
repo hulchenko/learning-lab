@@ -1,0 +1,54 @@
+@import 'config';
+@import 'button';
+@import 'navigation';
+@import 'homepage';
+@import 'services';
+@import 'work';
+@import 'contact';
+@import 'mobile';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*so that padding doesn't affect width of the elements*/
+}
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #111;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+p {
+  margin: 20px 0 10px 0;
+  font-size: 1.1rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  padding: 100px;
+  margin-top: 60px;
+
+  &.home {
+    /* flex direction default is row, but we need column for 'services' */
+    flex-direction: row;
+    margin-top: 0;
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+  font-size: 2rem; /*multiplier of the set font-size*/
+  font-weight: 700;
+  z-index: 20;
+}

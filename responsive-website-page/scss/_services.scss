@@ -1,0 +1,29 @@
+.services {
+  margin-top: 40px;
+  display: grid;
+  /* to lay out 3 columns of 1 fragment each. Equivalent to 1fr 1fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  text-align: center;
+
+  & .service {
+    padding: 30px;
+    border: 1px solid #f4f4f4;
+    border-radius: 5px;
+  }
+
+  & .service h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: $secondary-color;
+  }
+
+  & .service:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  & .service .icon img {
+    max-width: 100px;
+  }
+}
