@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update CSS variables with JS Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Power of <span class="h1">JS</span> in CSS</h1>
+    <div class="controls">
+        <!-- spacing input -->
+        <label for="spacing">Spacing</label>
+            <input type="range" name="spacing" min="10" max="150" value="10" data-sizing="px">
+        <!-- blur input -->
+        <label for="blur">Blur</label>
+            <input type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
+        <!-- color input -->
+        <label for="color">Color</label>
+        <input type="color" name="base" value="#ffffff">
+    </div>
+    <img src="./images/background.jpg" alt="palm trees panorama">
+    <script src="script.js"></script>
+</body>
+</html>

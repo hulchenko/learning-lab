@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap');
+
+/* declaring variables: */
+:root {
+    --base:#ffffff;
+    --spacing: 10px;
+    --blur: 0px;
+}
+
+/* appending variables to existing elements: */
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+    width: 35%;
+}
+
+
+.h1 {
+    color:var(--base);
+}
+
+/* regular css */
+body {
+    padding-top: 30px;
+    text-align: center;
+    background: #8584b6;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    font-family: 'Coda Caption', sans-serif;
+    overflow: hidden;
+}
+
+.controls {
+    margin-bottom: 30px;
+}
+
+input {
+    width: 100px;
+}
