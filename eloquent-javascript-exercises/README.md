@@ -1,0 +1,1 @@
+All of the tasks from the end of each chapter in "Eloquent Javascript" and FreeCodeCamp will be posted in this repository.
