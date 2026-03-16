@@ -1,4 +1,3 @@
-// [Migration Challenge 9 - Update old Link and Router APIs to new navigation APIs]
 import styles from '../styles/Home.module.css';
 import { VideoCard } from './VideoCard';
 

@@ -1,4 +1,3 @@
-// [Migration Challenge 3 - Update dynamic import with SSR off to client/server component split]
 import styles from '../styles/Home.module.css';
 import VideoGrid from '../components/VideoGrid';
 import { Suspense } from 'react';

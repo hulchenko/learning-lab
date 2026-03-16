@@ -6,16 +6,16 @@ import VideoPlayer from './VideoPlayer';
 import styles from "../styles/Player.module.css";
 
 export default function PlayerLayout({ props, children }) {
-    const { videoUrl, videoTitle, fact, chapterIdx } = props;
+    const { videoUrl, videoTitle, fact, id } = props;
     const videoRef = useRef(null);
 
-    const handleChapterClick = useCallback((chapterIdx) => {
+    const handleChapterClick = useCallback((id) => {
         const video = videoRef.current;
-        if(video.duration){
-            const percent = (chapterIdx + 1) * 0.1;
+        if(video && video.duration){
+            const percent = (id + 1) * 0.1;
             video.currentTime = video.duration * percent;
         }
-    }, [chapterIdx]);
+    }, [id]);
 
     return (
               <div style={{ padding: '2rem' }}>

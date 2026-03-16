@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['placecage.lucidinternets.com'],
+    remotePatterns: [
+      { protocol: 'https', hostname: 'placecage.lucidinternets.com', pathname: '/**' }
+    ]
   },
 }
 
