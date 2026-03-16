@@ -1,9 +1,9 @@
-import React from 'react';
+"use client";
 
-export default function VideoPlayer({ src, videoRef }) {
+export default function VideoPlayer({ src, ref = null }) {
   return (
     <video
-      ref={videoRef}
+      ref={ref}
       width="1280"
       height="720"
       controls

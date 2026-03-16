@@ -1,8 +1,4 @@
-// [Migration Challenge 6 - Update API routes in pages/api to app/api or edge/server actions]
-// API Route for related videos
-export default function handler(req, res) {
-  // This should match the home page data
-  const videos = [
+  export const videos = [
     {
       id: 1,
       title: 'National Treasure',
@@ -49,8 +45,3 @@ export default function handler(req, res) {
       fact: 'Nicolas Cage is fluent in several languages, including German and Italian. He enjoys traveling and immersing himself in different cultures. Cage often incorporates his linguistic skills into his film roles. His global perspective enriches his performances. Cage’s love for language is matched by his love for storytelling.',
     },
   ];
-  const { id } = req.query;
-  const videoId = parseInt(id, 10) || 1;
-  const relatedVideos = videos.filter(v => v.id !== videoId);
-  res.status(200).json({ relatedVideos });
-}
