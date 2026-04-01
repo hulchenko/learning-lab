@@ -8,10 +8,11 @@ export default async function getRelatedVideos(id) {
     throw new Error(error);
   }
 
-  const data = await new Promise((r) =>
-    setTimeout(() => {
-      r(res.json());
-    }, 5000),
+  const data = await new Promise(
+    (r) =>
+      setTimeout(() => {
+        r(res.json());
+      }, 2000), // for testing
   );
   return data;
 }
