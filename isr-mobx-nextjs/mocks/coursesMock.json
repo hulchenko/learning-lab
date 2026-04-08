@@ -1,0 +1,667 @@
+[
+    {
+        "courseName": "Pod Racer Repair",
+        "courseId": "001",
+        "courseImage": "https://lumiere-a.akamaihd.net/v1/images/open-uri20150608-27674-17jdtgt_15832f46.jpeg?region=0%2C0%2C1200%2C675",
+        "dicipline": "neutral",
+        "curriculum": [
+            {
+                "title": "Understanding Repulsorlift Engines",
+                "complete": true,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Wiring the Control Cables",
+                "complete": true,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Aerodynamics and Drag Reduction",
+                "complete": true,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Flushing the Fuel Lines",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Emergency Stabilizer Protocols",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Final Ignition Test",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            }
+        ]
+    },
+    {
+        "courseName": "Death Star Assembly",
+        "courseId": "002",
+        "courseImage": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2020/11/death-star-in-rogue-one.jpg",
+              "dicipline": "sith",
+        "curriculum": [
+            {
+                "title": "Phase 1: Superlaser Core Calibration",
+                "complete": true,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Phase 2: Trench Navigation Systems",
+                "complete": true,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Phase 3: Thermal Exhaust Port Shielding",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Phase 4: Tractor Beam Emitter Installation",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Phase 5: Station Orbit Setup",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            }
+        ]
+    },
+    {
+        "courseName": "Parenting 101",
+        "courseId": "003",
+        "courseImage": "https://lumiere-a.akamaihd.net/v1/images/jedi-youngling_0ee1eee6.jpeg?region=188%2C0%2C1184%2C666",
+              "dicipline": "jedi",
+        "curriculum": [
+            {
+                "title": "Introduction to Swaddling a Newborn",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Balancing the Light and Dark Sides of Discipline",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Navigating Awkward Sibling Dynamics",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Effective Communication Without Force Choking",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Galactic Child Support Payments",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            }
+        ]
+    },
+    {
+        "courseName": "Lightsaber Construction",
+        "courseId": "004",
+        "courseImage": "https://media.cnn.com/api/v1/images/stellar/prod/propstore-darth-vader-s-lightsaber-10.jpg?c=16x9&q=w_1280,c_fill",
+              "dicipline": "jedi",
+        "curriculum": [
+            {
+                "title": "Finding Your Kyber Crystal",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Focusing the Emitter Matrix",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Constructing the Hilt",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Adjusting the Blade Length",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "First Ignition and Calibration",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            }
+        ]
+    },
+    {
+        "courseName": "Droid Maintenance & Translation",
+        "courseId": "005",
+        "courseImage": "https://cache.undercovertourist.com/blog/2019/11/1119-galaxys-edge-awards-droid.jpg",
+              "dicipline": "sith",
+        "curriculum": [
+            {
+                "title": "Astromech Diagnostics",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Protocol Droid Etiquette Circuitry",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Decoding Binary Loadlifters",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Oil Bath Optimization",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Restraining Bolt Basics",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            }
+        ]
+    },
+    {
+        "courseName": "Bounty Hunting 101",
+        "courseId": "006",
+        "courseImage": "https://media.vanityfair.com/photos/596a531c5bf2674c3c8f857c/master/pass/boba-fett.jpg",
+              "dicipline": "neutral",
+        "curriculum": [
+            {
+                "title": "Guild Regulations and Licensing",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Tracking Fobs and Beacons",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Carbonite Freezing Operations",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Ship Upgrades for Secure Transport",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Negotiating with Hutts",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            }
+        ]
+    },
+    {
+        "courseName": "Jedi Mind Tricks",
+        "courseId": "007",
+        "courseImage": "https://lumiere-a.akamaihd.net/v1/images/databank_jedimindtrick_01_169_a491266d.jpeg?region=0%2C43%2C1560%2C781",
+              "dicipline": "jedi",
+        "curriculum": [
+            {
+                "title": "Focusing the Will",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "The Weak-Minded Target",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Subtle Persuasion Techniques",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Resisting Counter-Influence",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Ethics of Mind Control",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            }
+        ]
+    },
+    {
+        "courseName": "Moisture Farming Essentials",
+        "courseId": "008",
+        "courseImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi1BSRC-5cM2Q3vIWaMdpVtgTDDZrCbuxaYw&s",
+              "dicipline": "neutral",
+        "curriculum": [
+            {
+                "title": "Vaporator Maintenance",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Harvesting the Yield",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Defending Against Tusken Raiders",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Trade Strategies at Anchorhead",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Sandstorm Survival",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            }
+        ]
+    },
+    {
+        "courseName": "TIE Fighter Piloting",
+        "courseId": "009",
+        "courseImage": "https://static0.srcdn.com/wordpress/wp-content/uploads/2020/05/TIE-Fighter-Facts-Featured.jpg",
+              "dicipline": "sith",
+        "curriculum": [
+            {
+                "title": "Cockpit Familiarization",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Ion Engine Calibration",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Swarm Tactics",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Evasive Maneuvers",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Capital Ship Escort Formations",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            }
+        ]
+    },
+    {
+        "courseName": "Navigating the Kessel Run",
+        "courseId": "010",
+        "courseImage": "https://static0.srcdn.com/wordpress/wp-content/uploads/2018/02/The-Kessel-Run-in-Solo-A-Star-Wars-Story.jpg?w=1200&h=628&fit=crop",
+              "dicipline": "jedi",
+        "curriculum": [
+            {
+                "title": "Plotting Hyperspace Routes",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Dealing with the Maw",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Hyperdrive Overclocking",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Refueling Mid-Flight",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Record Breaking Strategies",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            }
+        ]
+    },
+    {
+        "courseName": "Wookiee Etiquette",
+        "courseId": "011",
+        "courseImage": "https://cdn.mos.cms.futurecdn.net/Cb4SpQW7YJq4ibQwSz5x3V-1200-80.jpg",
+              "dicipline": "neutral",
+        "curriculum": [
+            {
+                "title": "Basic Shyriiwook Greetings",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Understanding Wookiee Body Language",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Life Debt Obligations",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Dejarik Fundamentals (Let the Wookiee Win)",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Kashyyyk Tree Surfing",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            }
+        ]
+    },
+    {
+        "courseName": "Smuggler Evasion Tactics",
+        "courseId": "012",
+        "courseImage": "https://static0.srcdn.com/wordpress/wp-content/uploads/2024/11/han-solo-with-hondo-ohnaka-and-doctor-aphra-custom-star-wars-image.jpg?w=1200&h=675&fit=crop",
+              "dicipline": "neutral",
+        "curriculum": [
+            {
+                "title": "Hidden Cargo Compartments",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Bypassing Imperial Scanners",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Asteroid Field Navigation",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Spoofing Transponder Codes",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Cantina Escape Routes",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            }
+        ]
+    },
+    {
+        "courseName": "Sith Alchemy and Artifacts",
+        "courseId": "013",
+        "courseImage": "https://www.escapistmagazine.com/wp-content/uploads/2024/07/Star_Wars_Rebels_Darth_Sidious_performing_Sith_alchemy.jpg?w=1024",
+              "dicipline": "sith",
+        "curriculum": [
+            {
+                "title": "History of Korriban",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Imbuing Objects with the Dark Side",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Translating Ancient Texts",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Creating Sith Amulets",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Managing Dark Side Corruption",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            }
+        ]
+    },
+    {
+        "courseName": "Mandalorian Combat Arts",
+        "courseId": "014",
+        "courseImage": "https://www.andrewliptak.com/content/images/size/w1200/2023/02/mandos.001.png",
+              "dicipline": "neutral",
+        "curriculum": [
+            {
+                "title": "Beskar Forging and Maintenance",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Jetpack Maneuverability",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Vambrace Weaponry Utilization",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "The Resol'nare Code",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Blaster Pistol Marksmanship",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            }
+        ]
+    },
+    {
+        "courseName": "Galactic Politics and Senate Rules",
+        "courseId": "015",
+        "courseImage": "https://lumiere-a.akamaihd.net/v1/images/galactic-senate-1-retina_6fd9c560.jpeg?region=0%2C0%2C1200%2C543",
+              "dicipline": "jedi",
+        "curriculum": [
+            {
+                "title": "Understanding the Republic Senate",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Trade Federation Regulations",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Votes of No Confidence",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Filibustering Techniques",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Spotting Sith Influence",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            }
+        ]
+    },
+    {
+        "courseName": "Taming and Riding Tauntauns",
+        "courseId": "016",
+        "courseImage": "https://lumiere-a.akamaihd.net/v1/images/databank_tauntaun_01_169_b7307446.jpeg?region=0%2C0%2C1560%2C878",
+              "dicipline": "neutral",
+        "curriculum": [
+            {
+                "title": "Approaching a Wild Tauntaun",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Saddling and Reins",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Steering in Snowstorms",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Emergency Shelter Strategies",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Recognizing Wampa Territory",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            }
+        ]
+    },
+    {
+        "courseName": "Holochess Mastery",
+        "courseId": "017",
+        "courseImage": "https://cdn.mos.cms.futurecdn.net/QZxDEvBRWsYeurC4nSCk8g-700-80.jpg",
+              "dicipline": "neutral",
+        "curriculum": [
+            {
+                "title": "The Rules of Dejarik",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Understanding Piece Movement",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Classic Opening Gambits",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Defensive Hologram Positioning",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Tournament Level Strategy",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            }
+        ]
+    },
+    {
+        "courseName": "Cantina Band Auditions",
+        "courseId": "018",
+        "courseImage": "https://lumiere-a.akamaihd.net/v1/images/bith_998c8489.jpeg?region=0%2C85%2C1560%2C878",
+              "dicipline": "neutral",
+        "curriculum": [
+            {
+                "title": "Mastering the Kloo Horn",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Jizz Music Theory",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Playing the Bandfill",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Tuning the Fanfar",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Navigating Bith Interpersonal Conflict",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            }
+        ]
+    },
+    {
+        "courseName": "Rebel Alliance Codebreaking",
+        "courseId": "019",
+        "courseImage": "https://static0.srcdn.com/wordpress/wp-content/uploads/2024/08/image-30-128.jpg",
+                "dicipline": "neutral",
+        "curriculum": [
+            {
+                "title": "Slicing Imperial Mainframes",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Bypassing Base Security Doors",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Signal Encryption Protocols",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Extracting Death Star Plans",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "Covert Data Transmission",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            }
+        ]
+    },
+    {
+        "courseName": "Basic Force Telekinesis",
+        "courseId": "020",
+        "courseImage": "https://lumiere-a.akamaihd.net/v1/images/image_b309ef48.png",
+              "dicipline": "sith",
+        "curriculum": [
+            {
+                "title": "Connecting with the Living Force",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Lifting Rocks and Small Objects",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            },
+            {
+                "title": "X-Wing Extraction from Swamps",
+                "complete": false,
+                "video": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+                "title": "Force Push in Combat",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+                "title": "Catching Falling Debris",
+                "complete": false,
+                "video": "https://test-streams.mux.dev/pts_shift/master.m3u8"
+            }
+        ]
+    }
+]
