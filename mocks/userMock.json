@@ -1,0 +1,21 @@
+{
+    "userName": "ihatesand",
+    "firstName": "Anakin",
+    "lastName": "Skywalker",
+    "avatar": "https://www.d20radio.com/main/wp-content/uploads/2017/02/darth-vader.jpg",
+    "id": 2816308004,
+    "courses": [
+        {
+            "id": 1,
+            "lessonsComplete": 2
+        },
+        {
+            "id": 2,
+            "lessonsComplete": 3
+        },
+        {
+            "id": 3,
+            "lessonsComplete": 0
+        }
+    ]
+}
