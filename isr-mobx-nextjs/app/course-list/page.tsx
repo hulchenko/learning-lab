@@ -5,6 +5,8 @@ import CustomLoader from "@/components/customLoader";
 
 import { getCourses } from "@/app/actions/getCourses";
 
+export const revalidate = 5;
+
 export default async function CourseList() {
   const data = getCourses();
   return (
