@@ -1,3 +1,4 @@
+import { courseStore } from "@/store/CourseStore";
 import { Course } from "@/types/courses";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,6 +13,7 @@ export default function CourseBig({ dataPromise }: { dataPromise: Promise<Course
   };
 
   const courses = use(dataPromise);
+  courseStore.courses = courses;
 
   return (
     <>
