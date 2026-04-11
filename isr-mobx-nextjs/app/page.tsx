@@ -1,29 +1,18 @@
 import { userStore } from "@/store/UserStore";
-import { UserProfileResponse } from "@/types/user";
 import Link from "next/link";
 import Image from "next/image";
+import { getUser } from "./actions/getUser";
 
-export default async function Page() {
-  const resp = await fetch(`${process.env.JSON_BIN}${process.env.USERS_BIN_ID}`, {
-    headers: {
-      "X-Master-Key": process.env.API_KEY as string,
-    },
-  });
+export default async function HomePage() {
+  const userProfile = await getUser();
 
-  if (!resp.ok) {
-    const errorText = await resp.text();
-    console.error("JSONBin Fetch Error:", resp.status, errorText);
-    throw new Error(`failed to fetch bin: ${resp.status} ${errorText}`);
-  }
-  const data = (await resp.json()) as UserProfileResponse;
-  const userProfile = data.record;
-
-  userStore.firstName = userProfile.firstName;
-  userStore.lastName = userProfile.lastName;
-  userStore.courses = userProfile.courses;
-  userStore.id = userProfile.id;
-  userStore.avatar = userProfile.avatar;
-  userStore.userName = userProfile.userName;
+  // userStore.firstName = userProfile.firstName;
+  // userStore.lastName = userProfile.lastName;
+  // userStore.courses = userProfile.courses;
+  // userStore.id = userProfile.id;
+  // userStore.avatar = userProfile.avatar;
+  // userStore.userName = userProfile.userName;
+  Object.assign(userStore, userProfile);
 
   return (
     <div className="flex flex-col flex-1 items-center justify-top p-8 font-sans dark:bg-black min-h-screen text-zinc-900 dark:text-zinc-100">

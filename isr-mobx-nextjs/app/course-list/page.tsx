@@ -1,32 +1,20 @@
+import { Suspense } from "react";
+
 import CourseBig from "@/components/courses/course-big";
-import { CourseList } from "../../types/courses";
-export default async function page() {
-  console.log("Request url: ", `${process.env.JSON_BIN}${process.env.COURSES_BIN_ID}`);
-  console.log(process.env.API_KEY);
-  console.log(process.env.ACCESS_KEY);
-  const resp = await fetch(`${process.env.JSON_BIN}${process.env.COURSES_BIN_ID}`, {
-    headers: {
-      "X-Master-Key": process.env.API_KEY as string,
-      "X-Access-Key": process.env.ACCESS_KEY as string,
-    },
-  });
+import CustomLoader from "@/components/customLoader";
 
-  if (!resp.ok) {
-    const errorText = await resp.text();
-    console.error("JSONBin Fetch Error:", resp.status, errorText);
-    throw new Error(`failed to fetch bin: ${resp.status} ${errorText}`);
-  }
-  const responseData = await resp.json();
-  const data = responseData.record as CourseList;
+import { getCourses } from "@/app/actions/getCourses";
 
+export default async function CourseList() {
+  const data = getCourses();
   return (
-    <div className="mt-8">
-      <>
-        <h1 className="w-full mt-8 text-4xl font-bold text-center text-transform: capitalize">Star Wars Courses:</h1>
-        {data.map((course) => (
-          <CourseBig key={course.courseId} course={course} />
-        ))}
-      </>
-    </div>
+    <Suspense fallback={<CustomLoader />}>
+      <div className="mt-8">
+        <>
+          <h1 className="w-full mt-8 text-4xl font-bold text-center text-transform: capitalize">Star Wars Courses:</h1>
+          <CourseBig dataPromise={data} />
+        </>
+      </div>
+    </Suspense>
   );
 }

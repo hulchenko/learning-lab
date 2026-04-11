@@ -1,13 +1,16 @@
+import { getCourseById } from "@/app/actions/getCourseById";
+import CourseDetails from "@/components/courses/course";
 import VideoPlayer from "@/components/video/VideoPlayer";
 import { userStore } from "@/store/UserStore";
 
-export default async function CoursePage(props: { params: Promise<{ courseId: string }> }) {
-    const { courseId } = await props.params;
+export default async function CoursePage({ params }: { params: Promise<{ courseId: string }> }) {
+  const { courseId } = await params;
+  const id = parseInt(courseId);
+  const course = await getCourseById(id);
 
-    return (
-        <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-            <h1 className="text-4xl font-bold mb-4">Lesson for user: {userStore.userName}</h1>
-            <VideoPlayer title="this is a test" videoUrl="https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8" />
-        </div>
-    )
+  if (!course) {
+    return <div>Course is not found!</div>;
+  }
+
+  return <CourseDetails course={course} />;
 }

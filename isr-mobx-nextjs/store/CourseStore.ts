@@ -1,5 +1,4 @@
-import { makeAutoObservable } from "mobx"
-import { CourseList } from "@/types/courses";
+import { makeAutoObservable } from "mobx";
 
 class CourseStore {}
 
