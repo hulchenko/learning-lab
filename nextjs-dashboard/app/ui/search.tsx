@@ -8,12 +8,17 @@ export default function Search({ placeholder }: { placeholder: string }) {
   const searchParams = useSearchParams();
   const currentPath = usePathname();
   const router = useRouter();
+  const params = new URLSearchParams(searchParams.toString());
 
   const query = searchParams.get('query')?.toString();
+
+  function resetPagination(){
+    params.set('page', '1'); // reset pagination
+  }
   
   function handleSearch(input: string){
-    const params = new URLSearchParams(searchParams.toString());
-
+    resetPagination();
+    
     if(input){
       params.set('query', input);
     } else {
